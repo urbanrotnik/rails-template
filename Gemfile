@@ -17,26 +17,23 @@ gem 'uglifier'
 
 group :development, :test do
   gem 'factory_bot_rails'
-  gem 'guard-rspec'
-  gem 'guard-spring'
-  gem 'pdf-inspector'
   gem 'pry'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'rspec-core'
   gem 'rspec-rails'
-  gem 'shoulda-matchers'
-  gem 'sinatra', require: false
-  gem 'sinatra-contrib', require: false
-  gem 'spring-commands-rspec'
+  gem 'simplecov', require: false
   gem 'timecop'
 end
 
 group :development do
   gem 'awesome_print'
   gem 'better_errors'
+  gem 'letter_opener'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
+  gem 'spring-commands-rspec'
+  gem 'spring-commands-rubocop'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
   gem 'xray-rails'
