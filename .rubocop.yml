@@ -1,0 +1,128 @@
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'db/seeds.rb'
+  TargetRubyVersion: 2.4
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/EmptyLinesAroundArguments:
+  Enabled: false
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+  EnforcedStyle: new_line
+
+Lint/UnneededDisable:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
+    - staging
+
+Rails/Delegate:
+  Enabled: false
+
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
+Rails/InverseOf:
+  Enabled: false
+
+Rails/ReversibleMigration:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+  AllowURI: true
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 35
+  Exclude:
+    - 'db/**/*'
+
+Metrics/ModuleLength:
+  Max: 150
+
+Metrics/CyclomaticComplexity:
+  Max: 8
+
+Metrics/PerceivedComplexity:
+  Max: 8
+
+Metrics/ClassLength:
+  Max: 150
+
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+
+Naming/FileName:
+  Enabled: false
+
+Naming/PredicateName:
+  NamePrefixBlacklist:
+    - is_
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
+Performance/Casecmp:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FormatStringToken:
+  EnforcedStyle: template
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/ModuleFunction:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: '()'
+    '%i': '()'
+    '%I': '()'
+    '%r': '{}'
+    '%w': '()'
+    '%W': '()'
