@@ -23,9 +23,6 @@ Layout/MultilineAssignmentLayout:
   Enabled: true
   EnforcedStyle: new_line
 
-Lint/UnneededDisable:
-  Enabled: false
-
 Rails:
   Enabled: true
 
@@ -112,7 +109,10 @@ Style/ModuleFunction:
 Style/MutableConstant:
   Enabled: false
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 
 Style/TrailingCommaInArguments:
