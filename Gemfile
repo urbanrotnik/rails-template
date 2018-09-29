@@ -8,6 +8,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.1'
 gem 'turbolinks', '~> 5'
+gem 'config'
 
 # Front-end related gems
 gem 'coffee-rails'
