@@ -1,14 +1,15 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.4.0'
+ruby '2.4.5'
 
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'config'
+gem 'paranoia', '~> 2.2'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
-gem 'rails', '~> 5.2.1'
+gem 'rails', '~> 5.2.2'
 gem 'turbolinks', '~> 5'
-gem 'config'
 
 # Front-end related gems
 gem 'coffee-rails'
@@ -46,4 +47,5 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
+  gem 'shoulda-matchers', '4.0.0.rc1'
 end
